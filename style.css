@@ -1,0 +1,101 @@
+body {
+    background: #F3F5FC;
+
+}
+
+.top-bar {
+width: 100%;
+height: 100px;
+    
+}
+
+.logo-alura{
+    margin: 40px 40px 0 40px;
+}
+
+.cuadro-resultados{
+    background-color: white;
+    float: right;
+    width: 35%;
+    height: 944px;
+    margin: -40px 40px 0 100px;
+    border-radius: 30px;
+
+}
+
+.imagen-del-resultado{
+    height: 350px;
+    text-align: center;
+    border: 5px black;
+
+}
+
+
+.caja-imagen{
+    padding: 50px;
+    text-align: center  ;
+
+}
+
+
+.contenido-principal{
+    
+    
+    width: 60%;
+    
+
+}
+
+.texto-inicial{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto-a-transformar{
+    margin: 0 auto;
+    background: transparent;
+    border: transparent;
+    height: 288px;
+    width: 688;
+
+}
+
+
+.texto-a-transformar, placeholder{
+    font-size: 45px;
+    font-family: "Roboto";
+
+}
+
+
+.botones {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    padding: 20px;
+  }
+
+
+.encriptar{
+    width: 328px;
+    height: 67px;
+    color: white;
+    background-color: #0A3871;
+    border-radius: 24px;
+    margin: 0 5px 0 0;
+    
+
+}
+
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    margin: 0 0 0 5px;
+}
