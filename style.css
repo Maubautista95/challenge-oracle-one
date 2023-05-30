@@ -54,18 +54,22 @@ height: 100px;
 
 }
 
-.texto-a-transformar{
+#texto-a-transformar{
     margin: 0 auto;
     background: transparent;
     border: transparent;
     height: 288px;
-    width: 688;
+    width: 688px;
+    font-size: 45px;
+    color: #0A3871;
+    font-family: "Roboto";
 
 }
 
 
-.texto-a-transformar, placeholder{
+#texto-a-transformar::placeholder{
     font-size: 45px;
+    color: #0A3871;
     font-family: "Roboto";
 
 }
@@ -81,7 +85,7 @@ height: 100px;
   }
 
 
-.encriptar{
+#encriptar{
     width: 328px;
     height: 67px;
     color: white;
@@ -92,7 +96,7 @@ height: 100px;
 
 }
 
-.desencriptar{
+#desencriptar{
     width: 328px;
     height: 67px;
     background-color: #D8DFE8;

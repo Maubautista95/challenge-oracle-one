@@ -6,6 +6,7 @@
     <title>Encritpador #1</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="logica.js"></script>
 
 </head>
 
@@ -18,24 +19,29 @@
     </header>
 
     <div class="cuadro-resultados">
-
+        <!--
+            Por ahora comentamos imagen de baki.
         <div class="caja-imagen">
         <img class="imagen-del-resultado" src="imagenes/imagen-resultado.webp">
         </div>
+        -->
+        
+        <p id="resultado"></p>
+
     </div>
     
 
 <div class="contenido-principal">
     <div class="texto-inicial">
         
-        <textarea class="texto-a-transformar" placeholder="Introduce tu texto aquí c:"></textarea>
+        <textarea id="texto-a-transformar" placeholder="Introduce tu texto aquí c:"></textarea>
 
     </div>
 
     <div class="botones">
 
-        <button class="encriptar">Encriptar</button>
-        <button class="desencriptar">Desencriptar</button>
+        <button onclick="encriptar()" id="encriptar">Encriptar</button>
+        <button onclick="desencriptar()" id="desencriptar">Desencriptar</button>
         
     </div>
 </div>
