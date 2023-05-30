@@ -23,7 +23,11 @@ function desencriptar() {
 }
 
 function copiar() {
-    var textoCopiado = document.getElementById('resultado');
+    const textoCopiado = document.getElementById('resultado').textContent;
+  
+    navigator.clipboard.writeText(textoCopiado);
 
-}
+  }
+  
+  
 

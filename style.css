@@ -13,17 +13,7 @@ height: 100px;
     margin: 40px 40px 0 40px;
 }
 
-.cuadro-resultados{
-    background-color: white;
-    float: right;
-    width: 35%;
-    height: 944px;
-    margin: -40px 40px 0 100px;
-    border-radius: 30px;
-    overflow: auto; /*Creará una barra de desplazamiento en caso de que el texto supere demasiado el tamaño del div.*/
-    
 
-}
 
 .imagen-del-resultado{
     height: 350px;
@@ -109,6 +99,28 @@ height: 100px;
     font-size: 18px;
 }
 
+
+.cuadro-resultados{
+    background-color: white;
+    float: right;
+    width: 35%;
+    height: 944px;
+    margin: -40px 40px 0 100px;
+    border-radius: 30px;
+    overflow: auto; 
+    /*
+    Overflow creará una barra de desplazamiento en caso de que el texto supere demasiado el tamaño del div.
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+
 #resultado{
 
     margin: 3px;
@@ -127,20 +139,10 @@ height: 100px;
 
 
 #botonCopiador{
-
-
-    position: absolute;
-    bottom: 20px;
-    right: 200px;
-    
-    
-    
-    margin: 0 auto;
+    margin: 400px 0 0 0;
     width: 328px;
     height: 67px;
     background: white;
     font-size: 18px;
     
-    
-
 }
