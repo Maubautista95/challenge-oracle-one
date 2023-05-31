@@ -13,9 +13,13 @@ height: 100px;
     margin: 40px 40px 0 40px;
 }
 
+.todo-el-contenido{
 
+    display: flex;
 
-.imagen-del-resultado{
+}
+
+#imagen-del-resultado{
     height: 350px;
     text-align: center;
     border: 5px black;
@@ -24,7 +28,7 @@ height: 100px;
 
 
 .caja-imagen{
-    padding: 50px;
+    margin: -450px 0 0 0;
     text-align: center  ;
 
 }
@@ -33,7 +37,7 @@ height: 100px;
 .contenido-principal{
     
     
-    width: 60%;
+    width: 55%;
     
 
 }
@@ -55,7 +59,7 @@ height: 100px;
     width: 688px;
     font-size: 45px;
     color: #0A3871;
-    font-family: "Roboto";
+    
 
 }
 
@@ -63,7 +67,8 @@ height: 100px;
 #texto-a-transformar::placeholder{
     font-size: 40px;
     color: #0A3871;
-    font-family: "Roboto";
+    font-family: roboto;
+    
 
 }
 
@@ -90,6 +95,15 @@ height: 100px;
 
 }
 
+
+#encriptar:hover{
+
+    font-size: 22px;
+    color: green;
+}
+
+
+
 #desencriptar{
     width: 328px;
     height: 67px;
@@ -97,15 +111,24 @@ height: 100px;
     border-radius: 24px;
     margin: 0 0 0 5px;
     font-size: 18px;
+    transition: 5ms;
 }
+
+#desencriptar:hover{
+
+    font-size: 22px;
+    color: green;
+}
+
+
 
 
 .cuadro-resultados{
     background-color: white;
-    float: right;
+    
     width: 35%;
     height: 944px;
-    margin: -40px 40px 0 100px;
+    margin: -70px 40px 0 100px;
     border-radius: 30px;
     overflow: auto; 
     /*
@@ -120,13 +143,26 @@ height: 100px;
 
 }
 
+#titulo-sin-texto{
+
+    font-size: 22px;
+    
+    color:#0A3871
+
+}
+
+#parrafo-sin-texto{
+    margin-top: 10px;
+    font-size: 18px;
+
+}
 
 #resultado{
 
     margin: 3px;
     font-size: 36px;
     color: #0A3871;
-    font-family: "Roboto";
+    
 
 }
 
@@ -139,10 +175,85 @@ height: 100px;
 
 
 #botonCopiador{
-    margin: 400px 0 0 0;
+    margin: 0 0 -550px 0;
     width: 328px;
     height: 67px;
     background: white;
     font-size: 18px;
+    
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .todo-el-contenido{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .cuadro-resultados {
+        
+        
+        margin-left: 30px;
+        align-items: flex-start;
+        width: 327px;
+        height: 327px;
+
+        
+    }
+
+    #texto-a-transformar::placeholder{
+        font-size: 22px;
+        color: #0A3871;
+        font-family: roboto;
+        
+  
+    }
+
+    #texto-a-transformar{
+
+        font-size: 22px;
+    }
+    
+   
+    .contenido-principal {
+        display: block;
+        width: 327px;
+        
+        margin: 10px 0 0 30px;
+    }
+
+    .botones {
+        margin: -150px 0;
+    }
+
+    .caja-imagen{
+
+        margin: -430px 0 0 0;
+
+    }
+
+    #imagen-del-resultado {
+        display: none;
+        
+    }
+
+    .texto-resultado{
+        vertical-align: top;
+        
+    }
+
+    #resultado{
+        margin: -80px 20px 0 20px;
+        width: 85%;
+        font-size: 20px;
+    }
+
+    #botonCopiador{
+        
+        visibility: hidden;
+        
+    }
     
 }

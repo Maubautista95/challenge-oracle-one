@@ -2,11 +2,17 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
     <title>Encritpador #1</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="logica.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
 
 </head>
 
@@ -18,27 +24,13 @@
         </div>
     </header>
 
-    <div class="cuadro-resultados">
-        <!--
-            Por ahora comentamos imagen de baki.
-        <div class="caja-imagen">
-        <img class="imagen-del-resultado" src="imagenes/imagen-resultado.webp">
-        </div>
-        -->
-        <div class="texto-resultado">
-        <p id="resultado"></p>
-        </div>
-        
-        <button onclick="copiar()" id="botonCopiador">Copia</button>
-
-        
-    </div>
-
+ 
+<div class="todo-el-contenido">
 
     <div class="contenido-principal">
         <div class="texto-inicial">
 
-            <textarea id="texto-a-transformar" placeholder="Introduce tu texto aquí c:"></textarea>
+            <textarea id="texto-a-transformar" placeholder="Introduce tu texto aquí ( ͡° ͜ʖ ͡°)"></textarea>
 
         </div>
 
@@ -51,8 +43,28 @@
     </div>
 
 
+    <div class="cuadro-resultados">
 
 
+        <div class="caja-imagen">
+            <img id="imagen-del-resultado" src="imagenes/imagen-resultado.webp">
+            <h1 id="titulo-sin-texto">Ningún mensaje fue encontrado.</h1>
+            <p id="parrafo-sin-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+
+        <div class="texto-resultado">
+            <p id="resultado"></p>
+        </div>
+
+        <br>
+        <button onclick="copiar()" id="botonCopiador">Copia</button>
+
+
+    </div>
+
+
+
+</div>
 
 
 
